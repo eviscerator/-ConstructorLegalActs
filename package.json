@@ -1,11 +1,11 @@
 {
   "name": "Table-pa",
   "version": "0.1.0",
-  "homepage": "https://lowpulsage.github.io/Table-pa/",
+  "homepage": "https://eviscerator.github.io/build/",
   "private": false,
   "author": {
-    "name": "Impulse",
-    "email": "smetiyk@gmail.com"
+    "name": "eviscerator",
+    "email": "eviscerator@mail.ru"
   },
   "dependencies": {
     "@babel/core": "7.7.4",

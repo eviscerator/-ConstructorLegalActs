@@ -11,7 +11,7 @@ const PDocument = () => {
   const { id } = useParams()
   const doc = useSelector(state => (state.list.find(i => i.id === id)))
 
-  const [tempItem, setTempItem] = useState(undefined)
+  const [tempItem, setTempItem] = useState()
 
   return (
     <div className='wrapper'>

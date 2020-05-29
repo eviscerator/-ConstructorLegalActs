@@ -8,6 +8,8 @@ import typicalBlocks from '~/typicalBlocks'
 import { Collapse, Checkbox } from 'antd'
 import './index.scss'
 
+/* eslint-disable */
+
 const PMenu = ({ tempItem, setTempItem }) => {
   const { id } = useParams()
   const doc = useSelector(state => (state.list.find(i => i.id === id))) || {}
@@ -17,8 +19,14 @@ const PMenu = ({ tempItem, setTempItem }) => {
 
   Object.values(typicalBlocks).forEach(tp => {
     if (tp.keys.includes(doc.template)) {
-      if (!types[tp.group]) types[tp.group] = []
-      types[tp.group].push(tp.name)
+      if (tp.subGroup) {
+        if (!types[tp.group]) types[tp.group] = {}
+        if (!types[tp.group][tp.subGroup]) types[tp.group][tp.subGroup] = []
+        types[tp.group][tp.subGroup].push(tp.name)
+      } else {
+        if (!types[tp.group]) types[tp.group] = []
+        types[tp.group].push(tp.name)
+      }
     }
   })
 
@@ -53,17 +61,36 @@ const PMenu = ({ tempItem, setTempItem }) => {
             ? (i !== 'Изменяющие положения' && i !== 'Положения об утрате силы') : i)
           .map(i => (
             <Collapse.Panel header={i} key={i}>
-              {types[i].map(tp => (
-                <p
-                  draggable='true'
-                  onDragStart={() => onDragStart(tp)}
-                  onDragEnd={onDragEnd}
-                  onClick={() => addNew(tp)}
-                  key={tp}
-                >
-                  {typicalBlocks[tp].node}
-                </p>
-              ))}
+              {Array.isArray(types[i])
+                ? types[i].map(tp => (
+                  <p
+                    draggable='true'
+                    onDragStart={() => onDragStart(tp)}
+                    onDragEnd={onDragEnd}
+                    onClick={() => addNew(tp)}
+                    key={tp}
+                  >
+                    {typicalBlocks[tp].node}
+                  </p>
+                )) : (<Collapse bordered={false} defaultActiveKey={['1']}>
+                  {Object.keys(types[i]).map(e => (
+                    <Collapse.Panel header={e} key={e}>
+                      {
+                        types[i][e].map(some => (
+                          <p
+                            draggable='true'
+                            onDragStart={() => onDragStart(some)}
+                            onDragEnd={onDragEnd}
+                            onClick={() => addNew(some)}
+                            key={some}
+                          >
+                            {typicalBlocks[some].node}
+                          </p>
+                        ))
+                      }
+                    </Collapse.Panel>
+                  ))}
+                </Collapse>)}
             </Collapse.Panel>
           ))}
       </Collapse>

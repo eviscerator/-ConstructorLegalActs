@@ -161,7 +161,7 @@ export default {
   tb106: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }} id='tb106'>
-        <span id='tb106' style={{ color: 'blue' }}>[Обстоятельство][Субъект][модальное действие][действие][текст требования]</span>
+        <span id='tb106' style={{ color: 'blue' }}>[Обстоятельство]<span id='tb106-1'>[Субъект]</span><span id='tb106-2'>[модальное действие]</span>[действие][текст требования]</span>
       </span>
     ),
     keys: ['Pravitelstvo', 'PrikazFoiv', 'UkazPresidenta'],
@@ -172,14 +172,11 @@ export default {
   tb107: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }} id='tb107'>
-        <span style={{ color: 'blue'}} ><span >[Обстоятельство]</span>
-          <span >[субъект]</span>
-          <span >[модальное действие]</span>
-          <span>[действие]</span>
-          <span>слудующие</span>
-          <span>[требования/условия]</span>
-          <br/>
-          </span>
+        <span style={{ color: 'blue' }} id='tb107-0'><span id='tb107-5'>[Обстоятельство]</span>
+          <span id='tb107-1'>[субъект]</span>
+          <span id='tb107-2'>[модальное действие]</span>
+          <span id='tb107-6'>[действие]следующие</span>
+          <span id='tb107-3'>[требования/условия]</span></span><br />
       </span>
     ),
     subGroup: 'Общее требование',
@@ -201,7 +198,7 @@ export default {
   tb109: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }} id='tb109'>
-        <span id='tb109' style={{ color: 'blue' }}>[Обстоятельство][Объект 1][модальное действие][действие][Объект 2][Обстоятельства]</span>
+        <span id='tb109' style={{ color: 'blue' }}>[Обстоятельство]<span id='tb109-4'>[Объект 1]</span><span id='tb109-2'>[модальное действие]</span>[действие]<span id='tb109-5'>[Объект 2]</span>[Обстоятельства]</span>
       </span>
     ),
     subGroup: 'Конкретное требование',
@@ -212,7 +209,7 @@ export default {
   tb110: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }} id='tb110'>
-        <span id='tb110' style={{ color: 'blue' }}>[модальное действие][Действие][текст требования]</span>
+        <span id='tb110' style={{ color: 'blue' }}><span id='tb110-2'>[модальное действие]</span>[Действие][текст требования]</span>
       </span>
     ),
     subGroup: 'Конкретное требование',

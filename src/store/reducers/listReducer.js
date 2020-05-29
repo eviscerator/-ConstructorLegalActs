@@ -1,4 +1,4 @@
-
+/*eslint-disable*/
 const initialState = JSON.parse(localStorage.getItem('allNpa')) || []
 
 export const listReducer = (state = initialState, action) => {

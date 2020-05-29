@@ -1,4 +1,6 @@
 .typicalBlocksItem {
+  display: flex;
+
   &:hover {
     .icon {
       display: inline-block;

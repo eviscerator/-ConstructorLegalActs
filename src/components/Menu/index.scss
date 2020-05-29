@@ -1,0 +1,22 @@
+.mainMenu {
+  background-color: #141a26;
+  padding-top: 20px;
+  width: 200px;
+
+  h2 {
+    color: white;
+    text-align: center;
+  }
+
+  .item {
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 7px 15px;
+    color: #fffdfc;
+    &:hover {
+      cursor: pointer;
+      background-color: #3a3f49;
+    }
+  }
+}

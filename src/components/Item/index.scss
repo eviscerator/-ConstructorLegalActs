@@ -1,0 +1,17 @@
+.typicalBlocksItem {
+  &:hover {
+    .icon {
+      display: inline-block;
+      font-size: 30px;
+    }
+  }
+
+  .icon {
+    display: none;
+    font-size: 30px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

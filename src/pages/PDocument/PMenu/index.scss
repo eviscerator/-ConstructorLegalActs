@@ -1,0 +1,36 @@
+.wrapperMenu {
+  width: 400px;
+  position: fixed;
+  right: 0;
+  margin-top: -10px;
+  height: 80%;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-radius: 10px 0 0 10px;
+
+  &::-webkit-scrollbar { width: 0; }
+
+  p {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  div[class~='ant-collapse'] {
+    border-radius: 15px 0 0 15px;
+    overflow: hidden;
+  }
+
+  .app {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    position: fixed;
+    margin-top: -40px;
+
+    .text {
+      margin-right: 20px;
+    }
+  }
+}

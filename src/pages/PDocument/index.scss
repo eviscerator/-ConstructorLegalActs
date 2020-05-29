@@ -1,0 +1,17 @@
+.wrapper {
+  background-color: #f5f8f9;
+  flex: 1;
+  align-items: center;
+
+  .wrapperConstructor {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    height: 90%;
+    margin-bottom: 15px;
+  }
+}
+
+.over {
+  background-color: red;
+}

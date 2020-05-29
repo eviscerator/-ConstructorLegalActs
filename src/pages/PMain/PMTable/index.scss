@@ -1,0 +1,25 @@
+.wrapperList {
+  margin: 20px 10px !important;
+
+  .card {
+    height: 150px;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 2px 4px #baafb3;
+    }
+
+    .cardHeader {
+      display: flex;
+      justify-content: space-between;
+
+      .cardButton {
+        margin-left: 10px;
+        &:hover {
+          font-size: 30px;
+          border-radius: 15px;
+          box-shadow: 0 2px 4px #baafb3;
+        }
+      }
+    }
+  }
+}

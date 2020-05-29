@@ -1,0 +1,18 @@
+.wrapperPreview {
+  flex: 1;
+  margin: 0 20px 0 30px;
+  background-color: #eff2f3;
+  padding: 15px 5px;
+  border-radius: 10px;
+  max-width: 797px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+}
+
+.activeBlock {
+  background-color: #ffe8de;
+  transition: 0.5s ease;
+}

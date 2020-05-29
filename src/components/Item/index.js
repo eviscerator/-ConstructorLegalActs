@@ -21,8 +21,10 @@ const checkItem = key => {
 const Item = ({ items, item, ind, listNumber, action, setIsVisibleModal, isVisibleModal, setSelectedNode }) => {
   const list = useSelector(state => state.customReduser)
   return <div className='typicalBlocksItem' style={{ margin: 0, fontFamily: 'Times New Roman', fontSize: 19 }}>
-    <DragHandleLeft />
-    <Icon onClick={() => action(ind)} className='icon' type='delete' />
+    <div className='wrapper_icon'>
+      <DragHandleLeft />
+      <Icon onClick={() => action(ind)} className='icon' type='delete' />
+    </div>
     <span>{listNumber ? listNumber + '. ' : ''}</span>
     <div onClick={checkItem(item) ? e => {
       setIsVisibleModal(true);

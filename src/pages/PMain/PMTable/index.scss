@@ -8,6 +8,10 @@
       box-shadow: 0 2px 4px #baafb3;
     }
 
+    .ant-card-head-title {
+      overflow: visible;
+    }
+
     .cardHeader {
       display: flex;
       justify-content: space-between;
@@ -15,7 +19,7 @@
       .cardButton {
         margin-left: 10px;
         &:hover {
-          font-size: 30px;
+          transform: scale(1.5);
           border-radius: 15px;
           box-shadow: 0 2px 4px #baafb3;
         }

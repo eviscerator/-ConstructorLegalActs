@@ -14,6 +14,7 @@ const checkItem = key => {
     case 'tb108': return true
     case 'tb109': return true
     case 'tb110': return true
+    case 'tb111': return true
     default: return false
   }
 }
@@ -26,14 +27,7 @@ const Item = ({ items, item, ind, listNumber, action, setIsVisibleModal, isVisib
       <Icon onClick={() => action(ind)} className='icon' type='delete' />
     </div>
     <span>{listNumber ? listNumber + '. ' : ''}</span>
-    <div onClick={checkItem(item) ? e => {
-      setIsVisibleModal(true);
-      let newSelectedNode = e.target.id
-      if (newSelectedNode.length > 5) {
-        newSelectedNode = newSelectedNode.slice(0, -2)
-      }
-      setSelectedNode(newSelectedNode)
-       } : null}>
+    <div >
       {list[item].node}
     </div>
   </div >

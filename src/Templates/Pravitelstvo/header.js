@@ -1,13 +1,9 @@
 import React from 'react'
 import { DatePicker, AutoComplete, Input } from 'antd'
 
-const options = [
-  { value: 'Burns Bay Road' },
-  { value: 'Downing Street' },
-  { value: 'Wall Street' },
-]
+const options = ['Burns Bay Road', 'Downing Street', 'Wall Street']
 
-const handleSearch = (inputValue, option) => option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
+const handleSearch = (inputValue, option) => option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
 
 export default () => (
   <>
@@ -24,7 +20,12 @@ export default () => (
       Москва
     </p>
     <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', fontSize: 19 }}>
-      «О внесении изменений в <span><AutoComplete placeholder='название' size='small' style={{ width: 200 }} options={options} onChange={handleSearch} />, <DatePicker format='DD.MM.YYYY' style={{ width: 100 }} placeholder='Дата' size='small' />, <AutoComplete placeholder='номер НПА' size='small' style={{ width: 150 }} options={options} onChange={handleSearch} /></span>»
+      «О внесении изменений в
+      <span style={{ margin: '0 0 0 10px' }}>
+        <AutoComplete placeholder='название' size='small' style={{ width: 200 }} dataSource={options} filterOption={handleSearch} />,
+        <DatePicker format='DD.MM.YYYY' style={{ width: 100 }} placeholder='Дата' size='small' />,
+        <AutoComplete placeholder='номер НПА' size='small' style={{ width: 150 }} dataSource={options} filterOption={handleSearch} />
+      </span>»
     </p>
     <div style={{ margin: 20 }}>
       <p style={{ textAlign: 'start', fontFamily: 'Times New Roman', margin: 0, fontSize: 19 }}>

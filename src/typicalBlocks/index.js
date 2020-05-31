@@ -220,6 +220,17 @@ export default {
     group: 'Шаблоны Обязательных требований',
     name: 'tb110',
   },
+  tb111: {
+    node: (
+        <span style={{ fontFamily: 'Times New Roman' }} id='tb111'>
+        <span id='tb111' style={{ color: 'blue' }}>[Объект 1][Обстоятельство][модальное действие][Действие][Объект 2]</span>
+      </span>
+    ),
+    subGroup: 'Конкретное требование',
+    keys: ['Pravitelstvo', 'PrikazFoiv', 'UkazPresidenta'],
+    group: 'Шаблоны Обязательных требований',
+    name: 'tb111',
+  },
   tb16: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>

@@ -1,5 +1,6 @@
 /*eslint-disable*/
 import React from 'react'
+import { DatePicker, AutoComplete, Input, Select} from 'antd'
 
 export default {
   tb1: {
@@ -216,6 +217,40 @@ export default {
     keys: ['Pravitelstvo', 'PrikazFoiv', 'UkazPresidenta'],
     group: 'Шаблоны Обязательных требований',
     name: 'tb110',
+  },
+  tb111: {
+    node: (
+        <span style={{ fontFamily: 'Times New Roman' }} id='tb111'>
+        <span id='tb111' style={{ color: 'blue' }}>
+          <Select placeholder='Объект 1'  style={{ width: 260, margin:'0 10px 10px 0' }} bordered={false}>
+            <Option value="jack">Уровни звука и звукового давления</Option>
+            <Option value="lucy">Значения виброускорений</Option>
+            <Option value="Yiminghe">Уровни инфразвука</Option>
+          </Select>
+          <Select placeholder='Обстоятельство' style={{ width: 300, margin:'0 10px 10px 0' }} bordered={false}>
+            <Option value="jack">в салонах МВПС, в помещениях МВПС</Option>
+            <Option value="lucy">Значения виброускорений</Option>
+            <Option value="Yiminghe">Уровни инфразвука</Option>
+          </Select>
+          <Select placeholder='модальное действие' style={{ width: 180, margin:'0 10px 10px 0' }} bordered={false}>
+            <Option value="jack">не должны</Option>
+            <Option value="lucy">должны</Option>
+          </Select>
+          <Select placeholder='Действие' style={{ width: 140, margin:'0 10px 10px 0' }} bordered={false}>
+            <Option value="jack">превышать</Option>
+            <Option value="lucy">соответствовать</Option>
+          </Select>
+          <Select placeholder='Объект 2' style={{ width: 400, margin:'0 10px 10px 0' }} bordered={false}>
+            <Option value="jack">предельно допустимых значений</Option>
+            <Option value="lucy">требованиям приведенным приведенным в таблице 56</Option>
+          </Select>
+        </span>
+      </span>
+    ),
+    subGroup: 'Конкретное требование',
+    keys: ['Pravitelstvo', 'PrikazFoiv', 'UkazPresidenta'],
+    group: 'Шаблоны Обязательных требований',
+    name: 'tb111',
   },
   tb16: {
     node: (

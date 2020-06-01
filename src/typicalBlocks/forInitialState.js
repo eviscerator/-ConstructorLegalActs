@@ -1,6 +1,12 @@
 /*eslint-disable*/
 import React from 'react'
-import { DatePicker, AutoComplete, Input, Select} from 'antd'
+import { DatePicker, AutoComplete, Input, Select } from 'antd'
+import typicalBlocks from '~/typicalBlocks'
+const { TextArea } = Input;
+
+const showModal = ()=>{
+  alert('tttt');
+}
 
 export default {
   tb1: {
@@ -141,8 +147,8 @@ export default {
   },
   tb14: {
     node: (
-      <span style={{ fontFamily: 'Times New Roman' }}>
-        Министерству [<span style={{ color: 'blue' }}>название ФОИВ</span>] в [<span style={{ color: 'blue' }}>срок</span>] со дня вступления в силу настоящего постановления [<span style={{ color: 'blue' }}>текст поручения</span>]
+      <span style={{ fontFamily: 'Times New Roman',  display:'block', width:'700px' }} id='tb14'>
+        <span id='tb14-1' style={{ color: 'blue', cursor: 'pointer' }}>[название ФОИВ]</span> в <span style={{ color: 'blue', margin: '0 0 20px 0'}}><DatePicker format='DD.MM.YYYY' style={{ width: 100, cursor:'pointer' }} placeholder='Срок'  /></span> со дня вступления в силу настоящего постановления <span style={{ color: 'blue', display:'block', padding:'10px 0 0 0', margin:'0 0 10px' }}><TextArea  placeholder='текст поручения'  /></span>
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -151,8 +157,8 @@ export default {
   },
   tb15: {
     node: (
-      <span style={{ fontFamily: 'Times New Roman' }}>
-        Министерству [<span style={{ color: 'blue' }}>название ФОИВ</span>] до [<span style={{ color: 'blue' }}>дата</span>] [<span style={{ color: 'blue' }}>текст поручения</span>]
+      <span style={{ fontFamily: 'Times New Roman', display:'block', width:'700px' }} id='tb15'>
+        <span style={{ color: 'blue', cursor: 'pointer' }} id='tb15-1'>[название ФОИВ] </span>до <DatePicker format='DD.MM.YYYY' style={{ width: 100, cursor:'pointer' }} placeholder='Дата'  /> <span style={{ color: 'blue', display:'block', width:'100%', padding:'10px 0 0 0', margin:'0 0 10px' }}><TextArea placeholder='текст поручения' /></span>
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -223,24 +229,28 @@ export default {
         <span style={{ fontFamily: 'Times New Roman' }} id='tb111'>
         <span id='tb111' style={{ color: 'blue' }}>
           <Select placeholder='Объект 1'  style={{ width: 260, margin:'0 10px 10px 0' }} bordered={false}>
+            <Option value="jack2">Объект 1</Option>
             <Option value="jack">Уровни звука и звукового давления</Option>
             <Option value="lucy">Значения виброускорений</Option>
             <Option value="Yiminghe">Уровни инфразвука</Option>
           </Select>
           <Select placeholder='Обстоятельство' style={{ width: 300, margin:'0 10px 10px 0' }} bordered={false}>
-            <Option value="jack">в салонах МВПС, в помещениях МВПС</Option>
-            <Option value="lucy">Значения виброускорений</Option>
-            <Option value="Yiminghe">Уровни инфразвука</Option>
+            <Option value="jack3">Обстоятельство</Option>
+            <Option value="jack4">в салонах МВПС</Option>
+            <Option value="jack5">в помещениях МВПС</Option>
           </Select>
           <Select placeholder='модальное действие' style={{ width: 180, margin:'0 10px 10px 0' }} bordered={false}>
+            <Option value="jack6">модальное действие</Option>
             <Option value="jack">не должны</Option>
             <Option value="lucy">должны</Option>
           </Select>
           <Select placeholder='Действие' style={{ width: 140, margin:'0 10px 10px 0' }} bordered={false}>
+            <Option value="jack8">Действие</Option>
             <Option value="jack">превышать</Option>
             <Option value="lucy">соответствовать</Option>
           </Select>
           <Select placeholder='Объект 2' style={{ width: 400, margin:'0 10px 10px 0' }} bordered={false}>
+            <Option value="jack0">Объект 2</Option>
             <Option value="jack">предельно допустимых значений</Option>
             <Option value="lucy">требованиям приведенным приведенным в таблице 56</Option>
           </Select>

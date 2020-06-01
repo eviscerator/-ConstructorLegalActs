@@ -8,9 +8,13 @@ import { changeSelectedItem } from '~/store/actions/changeSelectedItem'
 import typicalBlocks from '~/typicalBlocks'
 import * as templates from '~/Templates'
 import { Item } from '~/components'
-import { Modal, Select } from 'antd'
+import { Modal, Select, AutoComplete } from 'antd'
 
 const { Option } = Select
+
+const listDepartmentShort = ['Минприроды',  'Минкульт',  'Миздрав',  'Минсельхоз',  'Минтранс',  'Минэк',  'Минобр',  'Минспорт',  'Минобороны',  'Минтруда',  'Минюст',  'Минстрой',  'Минфин',  'Минсвязи',  'Минэнерго',  'Мипромторг']
+
+const listDepartmentLong =['Министерство природных ресурсов и экологии',  'Министерство культуры',  'Министерство здравоохранения',  'Министерство сельского хозяйства',  'Министерство транспорта',  'Министерство экономического развития',  'Министерство образования и науки',  'Министерство спорта, туризма и молодежной политики',  'Министерство обороны',  'Министерство труда и социальной защиты',  'Министерство юстиции РФ',  'Министерство строительства и жилищно-коммунального хозяйства',  'Министерство финансов',  'Министерство связи и массовых коммуникаций',  'Министерство энергетики',  'Министерство промышленности и торговли',]
 
 const PPMain = ({ doc, tempItem, id, onSortEnd, onDragOver }) => {
   const [isVisibleModal, setIsVisibleModal] = useState(false)
@@ -77,6 +81,25 @@ const PPMain = ({ doc, tempItem, id, onSortEnd, onDragOver }) => {
     localStorage.setItem(`${doc.id}`, JSON.stringify(items))
     setValue(value)
   }
+
+  const onChangeFOIB = value => {
+    let newSelectedNode = selectedNode
+    let items = localStorage.getItem(`${doc.id}`)
+    items = items ? JSON.parse(items) : null
+
+    let index = listDepartmentShort.indexOf(value);
+    let el = listDepartmentLong[index]
+
+    if (items) {
+      if (items[`${newSelectedNode}`]) items[`${newSelectedNode}`][`${newSelectedNode}-1`] = el
+      else items[`${newSelectedNode}`] = { [`${newSelectedNode}-1`]: el }
+    } else {
+      items = { [`${newSelectedNode}`]: { [`${newSelectedNode}-1`]: el } }
+    }
+    localStorage.setItem(`${doc.id}`, JSON.stringify(items))
+    setValue(el)
+  }
+
 
   const onChangeModalDeistvie = value => {
     let newSelectedNode = selectedNode
@@ -148,15 +171,16 @@ const PPMain = ({ doc, tempItem, id, onSortEnd, onDragOver }) => {
   //   // document.querySelector(`[id="${selectedNode}"]`).innerHTML = `<span>${item}</span>`
   // }
 
+
   return (
     <div onDragOver={onDragOver} onDrop={onDrop} className={tempItem ? 'activeBlock' : ''}>
       <Modal
-        title='Basic Modal'
+
         visible={isVisibleModal}
         onOk={() => setIsVisibleModal(false)}
         onCancel={() => setIsVisibleModal(false)}
       >
-        <div style={selectedNode === 'tb106' || selectedNode === 'tb107' ? {} : { display: 'none' }}>
+        <div style={selectedNode === 'tb106' || selectedNode === 'tb107'  ? {} : { display: 'none' }}>
           <span>Субьект - </span>
           <Select placeholder="Субьект" style={{ width: 200 }} onChange={onChangeSubject}>
             <Option value='Исполнитель'>Исполнитель</Option>
@@ -165,7 +189,19 @@ const PPMain = ({ doc, tempItem, id, onSortEnd, onDragOver }) => {
             <Option value='Руководитель организации'>Руководитель организации</Option>
           </Select>
         </div>
-        <div >
+        <div style={selectedNode === 'tb14' || selectedNode === 'tb15' ? {} : { display: 'none' }}>
+          <span>Название ФОИВ - </span>
+          <AutoComplete
+              style={{ width: 200 }}
+              dataSource={listDepartmentShort}
+              onChange={onChangeFOIB}
+              placeholder="Выберите минестерство"
+              filterOption={(inputValue, option) =>
+                  option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
+              }
+          />
+        </div>
+        <div style={selectedNode === 'tb14' || selectedNode === 'tb15' ? { display: 'none' } : {}}>
           <span>Модальное действие - </span>
           <Select placeholder="Модальное действие" style={{ width: 200 }} onChange={onChangeModalDeistvie} >
             <Option value='Допускается'>Допускается</Option>
@@ -199,7 +235,7 @@ const PPMain = ({ doc, tempItem, id, onSortEnd, onDragOver }) => {
             <Option value='Обьект 3'>Обьект 3</Option>
           </Select>
         </div>
-        <div style={selectedNode === 'tb106' || selectedNode === 'tb109' || selectedNode === 'tb110' ? { display: 'none' } : {}}>
+        <div style={selectedNode === 'tb106' || selectedNode === 'tb109' || selectedNode === 'tb110' || selectedNode === 'tb14' || selectedNode === 'tb15' ? { display: 'none' } : {}}>
           <span> Требования / Условия - </span>
           <Select placeholder="Требования/Условия" style={{ width: 200 }} onChange={onChangeModalTrebovanie}>
             <Option value='Требование'>Требование</Option>

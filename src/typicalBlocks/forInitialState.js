@@ -12,7 +12,7 @@ export default {
   tb1: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>дата</span>]
+        [<span style={{ color: '#ccc' }}>дата</span>]
       </span>
     ),
     keys: [
@@ -25,7 +25,7 @@ export default {
   tb2: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        № [<span style={{ color: 'blue' }}>номер</span>]
+        № [<span style={{ color: '#ccc' }}>номер</span>]
       </span>
     ),
     keys: ['UkazPresidenta', 'RasporyazheniePresidenta', 'Pravitelstvo', 'RasporyazheniePravitelstva'],
@@ -35,7 +35,7 @@ export default {
   tb3: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        № [<span style={{ color: 'blue' }}>номер</span>]-ФКЗ
+        № [<span style={{ color: '#ccc' }}>номер</span>]-ФКЗ
       </span>
     ),
     keys: ['ZakonRFoPravkah', 'FKZ'],
@@ -45,7 +45,7 @@ export default {
   tb4: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        № [<span style={{ color: 'blue' }}>номер</span>]-ФЗ
+        № [<span style={{ color: '#ccc' }}>номер</span>]-ФЗ
       </span>
     ),
     keys: ['FZ'],
@@ -55,7 +55,7 @@ export default {
   tb5: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        № [<span style={{ color: 'blue' }}>номер</span>][<span style={{ color: 'blue' }}>- приставка (не обязательно)</span>]
+        № [<span style={{ color: '#ccc' }}>номер</span>][<span style={{ color: '#ccc' }}>- приставка (не обязательно)</span>]
       </span>
     ),
     keys: ['PrikazFoiv'],
@@ -65,7 +65,7 @@ export default {
   tb6: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>место</span>]
+        [<span style={{ color: '#ccc' }}>место</span>]
       </span>
     ),
     keys: ['PrikazFoiv'],
@@ -75,7 +75,7 @@ export default {
   tb7: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>название</span>]
+        [<span style={{ color: '#ccc' }}>название</span>]
       </span>
     ),
     keys: [
@@ -88,7 +88,7 @@ export default {
   tb8: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>преамбула (не обязательно)</span>]
+        [<span style={{ color: '#ccc' }}>преамбула (не обязательно)</span>]
       </span>
     ),
     keys: ['ZakonRFoPravkah', 'FKZ', 'FZ', 'UkazPresidenta', 'RasporyazheniePresidenta', 'PrikazFoiv'],
@@ -98,7 +98,7 @@ export default {
   tb9: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        В соответствии с [<span style={{ color: 'blue' }}>название, дата, номер НПА и/или ссылка на конкретную норму (ссылка на официальный источник опубликования)</span>]
+        В соответствии с [<span style={{ color: '#ccc' }}>название, дата, номер НПА и/или ссылка на конкретную норму (ссылка на официальный источник опубликования)</span>]
       </span>
     ),
     keys: ['Pravitelstvo', 'RasporyazheniePravitelstva'],
@@ -108,7 +108,7 @@ export default {
   tb10: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        В соответствии [<span style={{ color: 'blue' }}>название, дата, номер НПА и/или ссылка на конкретную норму (ссылка на официальный источник опубликования)</span>]
+        В соответствии [<span style={{ color: '#ccc' }}>название, дата, номер НПА и/или ссылка на конкретную норму (ссылка на официальный источник опубликования)</span>]
       </span>
     ),
     keys: ['UkazPresidenta', 'RasporyazheniePresidenta', 'PrikazFoiv'],
@@ -118,7 +118,7 @@ export default {
   tb11: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Утвердить [<span style={{ color: 'blue' }}>текст</span>]
+        Утвердить [<span style={{ color: '#ccc' }}>текст</span>]
       </span>
     ),
     keys: ['RasporyazheniePresidenta', 'Pravitelstvo', 'RasporyazheniePravitelstva', 'PrikazFoiv'],
@@ -128,7 +128,7 @@ export default {
   tb12: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Установить [<span style={{ color: 'blue' }}>текст</span>]
+        Установить [<span style={{ color: '#ccc' }}>текст</span>]
       </span>
     ),
     keys: ['RasporyazheniePresidenta', 'Pravitelstvo', 'RasporyazheniePravitelstva'],
@@ -138,7 +138,7 @@ export default {
   tb13: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Принять [<span style={{ color: 'blue' }}>текст</span>]
+        Принять [<span style={{ color: '#ccc' }}>текст</span>]
       </span>
     ),
     keys: ['UkazPresidenta', 'RasporyazheniePravitelstva'],
@@ -148,7 +148,7 @@ export default {
   tb14: {
     node: (
       <span style={{ fontFamily: 'Times New Roman',  display:'block', width:'700px' }} id='tb14'>
-        <span id='tb14-1' style={{ color: 'blue', cursor: 'pointer' }}>[название ФОИВ]</span> в <span style={{ color: 'blue', margin: '0 0 20px 0'}}><DatePicker format='DD.MM.YYYY' style={{ width: 100, cursor:'pointer' }} placeholder='Срок'  /></span> со дня вступления в силу настоящего постановления <span style={{ color: 'blue', display:'block', padding:'10px 0 0 0', margin:'0 0 10px' }}><TextArea  placeholder='текст поручения'  /></span>
+        <span id='tb14-1' style={{ color: '#ccc', cursor: 'pointer' }}>[название ФОИВ]</span> в <span style={{ color: '#ccc', margin: '0 0 20px 0'}}><DatePicker format='DD.MM.YYYY' style={{ width: 100, cursor:'pointer' }} placeholder='Срок'  /></span> со дня вступления в силу настоящего постановления <span style={{ color: '#ccc', display:'block', padding:'10px 0 0 0', margin:'0 0 10px' }}><TextArea  placeholder='текст поручения'  /></span>
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -158,7 +158,7 @@ export default {
   tb15: {
     node: (
       <span style={{ fontFamily: 'Times New Roman', display:'block', width:'700px' }} id='tb15'>
-        <span style={{ color: 'blue', cursor: 'pointer' }} id='tb15-1'>[название ФОИВ] </span>до <DatePicker format='DD.MM.YYYY' style={{ width: 100, cursor:'pointer' }} placeholder='Дата'  /> <span style={{ color: 'blue', display:'block', width:'100%', padding:'10px 0 0 0', margin:'0 0 10px' }}><TextArea placeholder='текст поручения' /></span>
+        <span style={{ color: '#ccc', cursor: 'pointer' }} id='tb15-1'>[название ФОИВ] </span>до <DatePicker format='DD.MM.YYYY' style={{ width: 100, cursor:'pointer' }} placeholder='Дата'  /> <span style={{ color: '#ccc', display:'block', width:'100%', padding:'10px 0 0 0', margin:'0 0 10px' }}><TextArea placeholder='текст поручения' /></span>
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -168,7 +168,7 @@ export default {
   tb106: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }} id='tb106'>
-        <span id='tb106' style={{ color: 'blue' }}>[Обстоятельство]<span id='tb106-1'>[Субъект]</span><span id='tb106-2'>[модальное действие]</span>[действие][текст требования]</span>
+        <span id='tb106' style={{ color: '#ccc' }}>[Обстоятельство]<span id='tb106-1'>[Субъект]</span><span id='tb106-2'>[модальное действие]</span>[действие][текст требования]</span>
       </span>
     ),
     keys: ['Pravitelstvo', 'PrikazFoiv', 'UkazPresidenta'],
@@ -179,7 +179,7 @@ export default {
   tb107: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }} id='tb107'>
-        <span style={{ color: 'blue' }} id='tb107-0'><span id='tb107-5'>[Обстоятельство]</span>
+        <span style={{ color: '#ccc' }} id='tb107-0'><span id='tb107-5'>[Обстоятельство]</span>
           <span id='tb107-1'>[субъект]</span>
           <span id='tb107-2'>[модальное действие]</span>
           <span id='tb107-6'>[действие]следующие</span>
@@ -194,7 +194,7 @@ export default {
   tb115: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        <span style={{ color: 'blue', margin: '0 0 0 30px' }}>[текст требований/условий]</span>
+        <span style={{ color: '#ccc', margin: '0 0 0 30px' }}>[текст требований/условий]</span>
       </span>
     ),
     subGroup: 'Общее требование',
@@ -205,7 +205,7 @@ export default {
   tb109: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }} id='tb109'>
-        <span id='tb109' style={{ color: 'blue' }}>[Обстоятельство]<span id='tb109-4'>[Объект 1]</span><span id='tb109-2'>[модальное действие]</span>[действие]<span id='tb109-5'>[Объект 2]</span>[Обстоятельства]</span>
+        <span id='tb109' style={{ color: '#ccc' }}>[Обстоятельство]<span id='tb109-4'>[Объект 1]</span><span id='tb109-2'>[модальное действие]</span>[действие]<span id='tb109-5'>[Объект 2]</span>[Обстоятельства]</span>
       </span>
     ),
     subGroup: 'Конкретное требование',
@@ -216,7 +216,7 @@ export default {
   tb110: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }} id='tb110'>
-        <span id='tb110' style={{ color: 'blue' }}><span id='tb110-2'>[модальное действие]</span>[Действие][текст требования]</span>
+        <span id='tb110' style={{ color: '#ccc' }}><span id='tb110-2'>[модальное действие]</span>[Действие][текст требования]</span>
       </span>
     ),
     subGroup: 'Конкретное требование',
@@ -227,7 +227,7 @@ export default {
   tb111: {
     node: (
         <span style={{ fontFamily: 'Times New Roman' }} id='tb111'>
-        <span id='tb111' style={{ color: 'blue' }}>
+        <span id='tb111' style={{ color: '#ccc' }}>
           <Select placeholder='Объект 1'  style={{ width: 260, margin:'0 10px 10px 0' }} bordered={false}>
             <Option value="jack2">Объект 1</Option>
             <Option value="jack">Уровни звука и звукового давления</Option>
@@ -265,7 +265,7 @@ export default {
   tb16: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Признать утратившими силу [<span style={{ color: 'blue' }}>название, дата, номер НПА и/или ссылка на конкретную норму (ссылка на официальный источник опубликования)</span>]
+        Признать утратившими силу [<span style={{ color: '#ccc' }}>название, дата, номер НПА и/или ссылка на конкретную норму (ссылка на официальный источник опубликования)</span>]
       </span>
     ),
     keys: ['RasporyazheniePresidenta', 'Pravitelstvo'],
@@ -275,7 +275,7 @@ export default {
   tb17: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Признать утратившими силу [<span style={{ color: 'blue' }}>название, дата, номер НПА и/или ссылка на конкретную норму (дата и номер регистрации в Минюсте)</span>]
+        Признать утратившими силу [<span style={{ color: '#ccc' }}>название, дата, номер НПА и/или ссылка на конкретную норму (дата и номер регистрации в Минюсте)</span>]
       </span>
     ),
     keys: ['PrikazFoiv'],
@@ -285,7 +285,7 @@ export default {
   tb18: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящее постановление вступает в силу с [<span style={{ color: 'blue' }}>дата</span>]
+        Настоящее постановление вступает в силу с [<span style={{ color: '#ccc' }}>дата</span>]
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -295,7 +295,7 @@ export default {
   tb19: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящее постановление вступает в силу с [<span style={{ color: 'blue' }}>дата</span>], за исключением [<span style={{ color: 'blue' }}>пункта(ов)</span>]
+        Настоящее постановление вступает в силу с [<span style={{ color: '#ccc' }}>дата</span>], за исключением [<span style={{ color: '#ccc' }}>пункта(ов)</span>]
       </span>
     ),
     keys: [],
@@ -305,7 +305,7 @@ export default {
   tb20: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящее постановление вступает в силу со дня вступления в силу [<span style={{ color: 'blue' }}>название, дата, номер НПА и/или ссылка на конкретную норму</span>]
+        Настоящее постановление вступает в силу со дня вступления в силу [<span style={{ color: '#ccc' }}>название, дата, номер НПА и/или ссылка на конкретную норму</span>]
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -315,7 +315,7 @@ export default {
   tb21: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящее постановление вступает в силу со дня вступления в силу [<span style={{ color: 'blue' }}>название, дата, номер НПА и/или ссылка на конкретную норму</span>], за исключением [<span style={{ color: 'blue' }}>пункта(ов)</span>]
+        Настоящее постановление вступает в силу со дня вступления в силу [<span style={{ color: '#ccc' }}>название, дата, номер НПА и/или ссылка на конкретную норму</span>], за исключением [<span style={{ color: '#ccc' }}>пункта(ов)</span>]
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -325,7 +325,7 @@ export default {
   tb22: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>пункт(ы)</span>] настоящего постановления вступает в силу со дня его официального опубликования
+        [<span style={{ color: '#ccc' }}>пункт(ы)</span>] настоящего постановления вступает в силу со дня его официального опубликования
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -335,7 +335,7 @@ export default {
   tb23: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>пункт(ы)</span>] настоящего постановления вступает в силу с [<span style={{ color: 'blue' }}>дата</span>]
+        [<span style={{ color: '#ccc' }}>пункт(ы)</span>] настоящего постановления вступает в силу с [<span style={{ color: '#ccc' }}>дата</span>]
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -345,7 +345,7 @@ export default {
   tb24: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>пункт(ы)</span>] настоящего постановления вступает в силу со дня вступления в силу [<span style={{ color: 'blue' }}>название, дата, номер НПА</span>]
+        [<span style={{ color: '#ccc' }}>пункт(ы)</span>] настоящего постановления вступает в силу со дня вступления в силу [<span style={{ color: '#ccc' }}>название, дата, номер НПА</span>]
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -355,7 +355,7 @@ export default {
   tb25: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>пункт(ы)</span>] настоящего постановления вступает в силу со дня вступления в силу [<span style={{ color: 'blue' }}>ссылка на норму</span>]
+        [<span style={{ color: '#ccc' }}>пункт(ы)</span>] настоящего постановления вступает в силу со дня вступления в силу [<span style={{ color: '#ccc' }}>ссылка на норму</span>]
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -365,7 +365,7 @@ export default {
   tb26: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Изменения, которые вносятся в [<span style={{ color: 'blue' }}>название</span>]
+        Изменения, которые вносятся в [<span style={{ color: '#ccc' }}>название</span>]
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -375,7 +375,7 @@ export default {
   tb27: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Изменения, которые вносятся в [<span style={{ color: 'blue' }}>название, дата, номер НПА</span>]
+        Изменения, которые вносятся в [<span style={{ color: '#ccc' }}>название, дата, номер НПА</span>]
       </span>
     ),
     keys: ['RasporyazheniePravitelstva'],
@@ -385,7 +385,7 @@ export default {
   tb28: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        В подпункте [<span style={{ color: 'blue' }}>№</span>] пункта [<span style={{ color: 'blue' }}>№</span>] слов(а) «[<span style={{ color: 'blue' }}>текст</span>]» заменить словами «[<span style={{ color: 'blue' }}>текст</span>]»
+        В подпункте [<span style={{ color: '#ccc' }}>№</span>] пункта [<span style={{ color: '#ccc' }}>№</span>] слов(а) «[<span style={{ color: '#ccc' }}>текст</span>]» заменить словами «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: ['Pravitelstvo', 'RasporyazheniePravitelstva'],
@@ -395,7 +395,7 @@ export default {
   tb29: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        В подпункте [<span style={{ color: 'blue' }}>№</span>] пункта [<span style={{ color: 'blue' }}>№</span>] слов(а) «[<span style={{ color: 'blue' }}>текст</span>]» исключить
+        В подпункте [<span style={{ color: '#ccc' }}>№</span>] пункта [<span style={{ color: 'bl#cccue' }}>№</span>] слов(а) «[<span style={{ color: '#ccc' }}>текст</span>]» исключить
       </span>
     ),
     keys: ['Pravitelstvo', 'RasporyazheniePravitelstva'],
@@ -405,7 +405,7 @@ export default {
   tb30: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Пункт [<span style={{ color: 'blue' }}>№</span>] дополнить подпунктом [<span style={{ color: 'blue' }}>№</span>], следующего содержания: [<span style={{ color: 'blue' }}>текст</span>]
+        Пункт [<span style={{ color: '#ccc' }}>№</span>] дополнить подпунктом [<span style={{ color: '#ccc' }}>№</span>], следующего содержания: [<span style={{ color: '#ccc' }}>текст</span>]
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -415,7 +415,7 @@ export default {
   tb31: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Подпункт [<span style={{ color: 'blue' }}>№</span>] пункта [<span style={{ color: 'blue' }}>№</span>] изложить в следующей редакции [<span style={{ color: 'blue' }}>текст</span>]
+        Подпункт [<span style={{ color: '#ccc' }}>№</span>] пункта [<span style={{ color: '#ccc' }}>№</span>] изложить в следующей редакции [<span style={{ color: '#ccc' }}>текст</span>]
       </span>
     ),
     keys: ['Pravitelstvo', 'RasporyazheniePravitelstva'],
@@ -425,7 +425,7 @@ export default {
   tb32: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Подпункт [<span style={{ color: 'blue' }}>№</span>] изложить в следующей редакции [<span style={{ color: 'blue' }}>текст</span>]
+        Подпункт [<span style={{ color: '#ccc' }}>№</span>] изложить в следующей редакции [<span style={{ color: '#ccc' }}>текст</span>]
       </span>
     ),
     keys: ['Pravitelstvo', 'RasporyazheniePravitelstva'],
@@ -435,7 +435,7 @@ export default {
   tb33: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Пункт [<span style={{ color: 'blue' }}>№</span>] изложить в следующей редакции [<span style={{ color: 'blue' }}>текст</span>]
+        Пункт [<span style={{ color: '#ccc' }}>№</span>] изложить в следующей редакции [<span style={{ color: '#ccc' }}>текст</span>]
       </span>
     ),
     keys: ['Pravitelstvo', 'RasporyazheniePravitelstva'],
@@ -445,7 +445,7 @@ export default {
   tb34: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        В целях [<span style={{ color: 'blue' }}>текст</span>]
+        В целях [<span style={{ color: '#ccc' }}>текст</span>]
       </span>
     ),
     keys: ['UkazPresidenta', 'RasporyazheniePresidenta', 'RasporyazheniePravitelstva', 'PrikazFoiv'],
@@ -455,7 +455,7 @@ export default {
   tb35: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        В связи [<span style={{ color: 'blue' }}>текст</span>]
+        В связи [<span style={{ color: '#ccc' }}>текст</span>]
       </span>
     ),
     keys: ['UkazPresidenta', 'RasporyazheniePresidenta', 'RasporyazheniePravitelstva', 'PrikazFoiv'],
@@ -465,7 +465,7 @@ export default {
   tb36: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Во исполнение [<span style={{ color: 'blue' }}>название, дата, номер НПА и/или ссылка на конкретную норму (ссылка на официальный источник опубликования)</span>]
+        Во исполнение [<span style={{ color: '#ccc' }}>название, дата, номер НПА и/или ссылка на конкретную норму (ссылка на официальный источник опубликования)</span>]
       </span>
     ),
     keys: ['PrikazFoiv'],
@@ -475,7 +475,7 @@ export default {
   tb37: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>ссылка на норму</span>] изложить в следующей редакции: [<span style={{ color: 'blue' }}>текст</span>]
+        [<span style={{ color: '#ccc' }}>ссылка на норму</span>] изложить в следующей редакции: [<span style={{ color: '#ccc' }}>текст</span>]
       </span>
     ),
     keys: ['UkazPresidenta', 'PrikazFoiv'],
@@ -485,7 +485,7 @@ export default {
   tb38: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>ссылка на норму</span>] слов(а) «[<span style={{ color: 'blue' }}>текст</span>]» заменить словами «[<span style={{ color: 'blue' }}>текст</span>]»
+        [<span style={{ color: '#ccc' }}>ссылка на норму</span>] слов(а) «[<span style={{ color: '#ccc' }}>текст</span>]» заменить словами «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: ['UkazPresidenta', 'PrikazFoiv'],
@@ -495,7 +495,7 @@ export default {
   tb39: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        В [<span style={{ color: 'blue' }}>ссылка на норму</span>] слова «[<span style={{ color: 'blue' }}>текст</span>]» исключить
+        В [<span style={{ color: '#ccc' }}>ссылка на норму</span>] слова «[<span style={{ color: '#ccc' }}>текст</span>]» исключить
       </span>
     ),
     keys: ['UkazPresidenta', 'PrikazFoiv'],
@@ -505,7 +505,7 @@ export default {
   tb40: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        В [<span style={{ color: 'blue' }}>ссылка на норму</span>] после слов «[<span style={{ color: 'blue' }}>текст</span>]» дополнить словами «[<span style={{ color: 'blue' }}>текст</span>]»
+        В [<span style={{ color: '#ccc' }}>ссылка на норму</span>] после слов «[<span style={{ color: '#ccc' }}>текст</span>]» дополнить словами «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: ['UkazPresidenta', 'PrikazFoiv'],
@@ -515,7 +515,7 @@ export default {
   tb41: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>ссылка на норму</span>] дополнить словами «[<span style={{ color: 'blue' }}>текст</span>]»
+        [<span style={{ color: '#ccc' }}>ссылка на норму</span>] дополнить словами «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: ['UkazPresidenta'],
@@ -525,7 +525,7 @@ export default {
   tb42: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Признать утратившим(…) [<span style={{ color: 'blue' }}>название, дата, номер НПА и/или ссылка на конкретную норму (ссылка на официальный источник опубликования)</span>]
+        Признать утратившим(…) [<span style={{ color: '#ccc' }}>название, дата, номер НПА и/или ссылка на конкретную норму (ссылка на официальный источник опубликования)</span>]
       </span>
     ),
     keys: ['UkazPresidenta'],
@@ -535,7 +535,7 @@ export default {
   tb43: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Указ вступает в силу с [<span style={{ color: 'blue' }}>пункт(ы)</span>] г.
+        Настоящий Указ вступает в силу с [<span style={{ color: '#ccc' }}>пункт(ы)</span>] г.
       </span>
     ),
     keys: ['UkazPresidenta'],
@@ -545,7 +545,7 @@ export default {
   tb44: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Принят Государственной Думой [<span style={{ color: 'blue' }}>дата</span>] года
+        Принят Государственной Думой [<span style={{ color: '#ccc' }}>дата</span>] года
       </span>
     ),
     keys: ['FZ'],
@@ -555,7 +555,7 @@ export default {
   tb45: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Одобрен Государственной Думой [<span style={{ color: 'blue' }}>дата</span>] года
+        Одобрен Государственной Думой [<span style={{ color: '#ccc' }}>дата</span>] года
       </span>
     ),
     keys: ['ZakonRFoPravkah', 'FKZ'],
@@ -565,7 +565,7 @@ export default {
   tb46: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Одобрен Советом Федерации [<span style={{ color: 'blue' }}>дата</span>] года
+        Одобрен Советом Федерации [<span style={{ color: '#ccc' }}>дата</span>] года
       </span>
     ),
     keys: ['ZakonRFoPravkah', 'FKZ', 'FZ'],
@@ -575,7 +575,7 @@ export default {
   tb47: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        РАЗДЕЛ [№] [<span style={{ color: 'blue' }}>название</span>]
+        РАЗДЕЛ [№] [<span style={{ color: '#ccc' }}>название</span>]
       </span>
     ),
     keys: ['FKZ', 'FZ'],
@@ -585,7 +585,7 @@ export default {
   tb48: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Статья [№]. Отношения, регулируемые настоящим Федеральным конституционным законом [<span style={{ color: 'blue' }}>текст нормы</span>]
+        Статья [№]. Отношения, регулируемые настоящим Федеральным конституционным законом [<span style={{ color: '#ccc' }}>текст нормы</span>]
       </span>
     ),
     keys: ['FKZ'],
@@ -595,7 +595,7 @@ export default {
   tb49: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Основные понятия, используемые в настоящем Федеральном конституционном законе [<span style={{ color: 'blue' }}>текст нормы</span>]
+        Основные понятия, используемые в настоящем Федеральном конституционном законе [<span style={{ color: '#ccc' }}>текст нормы</span>]
       </span>
     ),
     keys: ['FKZ'],
@@ -605,7 +605,7 @@ export default {
   tb50: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Статья [№]. Отношения, регулируемые настоящим Федеральным законом [<span style={{ color: 'blue' }}>текст нормы</span>]
+        Статья [№]. Отношения, регулируемые настоящим Федеральным законом [<span style={{ color: '#ccc' }}>текст нормы</span>]
       </span>
     ),
     keys: ['FZ'],
@@ -615,7 +615,7 @@ export default {
   tb51: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Основные понятия, используемые в настоящем Федеральном законе [<span style={{ color: 'blue' }}>текст нормы</span>]
+        Основные понятия, используемые в настоящем Федеральном законе [<span style={{ color: '#ccc' }}>текст нормы</span>]
       </span>
     ),
     keys: ['FZ'],
@@ -625,7 +625,7 @@ export default {
   tb52: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>Свободный текст</span>]
+        [<span style={{ color: '#ccc' }}>Свободный текст</span>]
       </span>
     ),
     keys: ['FKZ'],
@@ -645,7 +645,7 @@ export default {
   tb54: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Внести в Федеральный конституционный закон от [<span style={{ color: 'blue' }}>дата</span>] года [<span style={{ color: 'blue' }}>номер</span>]-ФЗ [<span style={{ color: 'blue' }}>название закона</span>], (в редакции [<span style={{ color: 'blue' }}>название закона</span>] от [<span style={{ color: 'blue' }}>дата</span>] года [<span style={{ color: 'blue' }}>номер</span>]-ФЗ (не обязательно)) следующие изменения:
+        Внести в Федеральный конституционный закон от [<span style={{ color: '#ccc' }}>дата</span>] года [<span style={{ color: '#ccc' }}>номер</span>]-ФЗ [<span style={{ color: '#ccc' }}>название закона</span>], (в редакции [<span style={{ color: '#ccc' }}>название закона</span>] от [<span style={{ color: '#ccc' }}>дата</span>] года [<span style={{ color: '#ccc' }}>номер</span>]-ФЗ (не обязательно)) следующие изменения:
       </span>
     ),
     keys: ['FKZ'],
@@ -655,7 +655,7 @@ export default {
   tb55: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Внести в Федеральный закон от [<span style={{ color: 'blue' }}>дата</span>] года [<span style={{ color: 'blue' }}>номер</span>]-ФЗ [<span style={{ color: 'blue' }}>название закона</span>], (в редакции [<span style={{ color: 'blue' }}>название закона</span>] от [<span style={{ color: 'blue' }}>дата</span>] года [<span style={{ color: 'blue' }}>номер</span>]-ФЗ (не обязательно)) следующие изменения:
+        Внести в Федеральный закон от [<span style={{ color: '#ccc' }}>дата</span>] года [<span style={{ color: '#ccc' }}>номер</span>]-ФЗ [<span style={{ color: '#ccc' }}>название закона</span>], (в редакции [<span style={{ color: '#ccc' }}>название закона</span>] от [<span style={{ color: '#ccc' }}>дата</span>] года [<span style={{ color: '#ccc' }}>номер</span>]-ФЗ (не обязательно)) следующие изменения:
       </span>
     ),
     keys: ['FZ'],
@@ -665,7 +665,7 @@ export default {
   tb56: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        В статье [<span style={{ color: 'blue' }}>№</span>] Часть [<span style={{ color: 'blue' }}>№</span>] Пункт [<span style={{ color: 'blue' }}>№</span>] дополнить Подпунктом [<span style={{ color: 'blue' }}>№</span>], следующего содержания: «[<span style={{ color: 'blue' }}>текст</span>]»
+        В статье [<span style={{ color: '#ccc' }}>№</span>] Часть [<span style={{ color: '#ccc' }}>№</span>] Пункт [<span style={{ color: '#ccc' }}>№</span>] дополнить Подпунктом [<span style={{ color: '#ccc' }}>№</span>], следующего содержания: «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: ['ZakonRFoPravkah', 'FKZ', 'FZ'],
@@ -675,7 +675,7 @@ export default {
   tb57: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        В статье [<span style={{ color: 'blue' }}>№</span>] Часть [<span style={{ color: 'blue' }}>№</span>] дополнить Пунктом [<span style={{ color: 'blue' }}>№</span>] следующего содержания: «[<span style={{ color: 'blue' }}>текст</span>]»
+        В статье [<span style={{ color: '#ccc' }}>№</span>] Часть [<span style={{ color: '#ccc' }}>№</span>] дополнить Пунктом [<span style={{ color: '#ccc' }}>№</span>] следующего содержания: «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: ['ZakonRFoPravkah', 'FKZ', 'FZ'],
@@ -685,7 +685,7 @@ export default {
   tb58: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        В статье [<span style={{ color: 'blue' }}>№</span>] дополнить Частью  [<span style={{ color: 'blue' }}>№</span>] следующего содержания: «[<span style={{ color: 'blue' }}>текст</span>]»
+        В статье [<span style={{ color: '#ccc' }}>№</span>] дополнить Частью  [<span style={{ color: '#ccc' }}>№</span>] следующего содержания: «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: ['ZakonRFoPravkah', 'FKZ', 'FZ'],
@@ -695,7 +695,7 @@ export default {
   tb59: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Преамбулу изложить в следующей редакции: «[<span style={{ color: 'blue' }}>текст</span>]»
+        Преамбулу изложить в следующей редакции: «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: ['ZakonRFoPravkah', 'FKZ', 'FZ'],
@@ -705,7 +705,7 @@ export default {
   tb60: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Статью [<span style={{ color: 'blue' }}>№</span>] изложить в следующей редакции: «[<span style={{ color: 'blue' }}>текст</span>]»
+        Статью [<span style={{ color: '#ccc' }}>№</span>] изложить в следующей редакции: «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: ['ZakonRFoPravkah', 'FKZ', 'FZ'],
@@ -715,7 +715,7 @@ export default {
   tb61: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Статью [<span style={{ color: 'blue' }}>№</span>] Часть [<span style={{ color: 'blue' }}>№</span>] изложить в следующей редакции: «[<span style={{ color: 'blue' }}>текст</span>]»
+        Статью [<span style={{ color: '#ccc' }}>№</span>] Часть [<span style={{ color: '#ccc' }}>№</span>] изложить в следующей редакции: «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: ['ZakonRFoPravkah', 'FKZ', 'FZ'],
@@ -725,7 +725,7 @@ export default {
   tb62: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Статью [<span style={{ color: 'blue' }}>№</span>] Часть [<span style={{ color: 'blue' }}>№</span>] Пункт [<span style={{ color: 'blue' }}>№</span>] изложить в следующей редакции: «[<span style={{ color: 'blue' }}>текст</span>]»
+        Статью [<span style={{ color: '#ccc' }}>№</span>] Часть [<span style={{ color: '#ccc' }}>№</span>] Пункт [<span style={{ color: '#ccc' }}>№</span>] изложить в следующей редакции: «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: ['ZakonRFoPravkah', 'FKZ', 'FZ'],
@@ -735,7 +735,7 @@ export default {
   tb63: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Статью [<span style={{ color: 'blue' }}>№</span>] Часть [<span style={{ color: 'blue' }}>№</span>] Пункт [<span style={{ color: 'blue' }}>№</span>] Подпункт [<span style={{ color: 'blue' }}>№</span>] изложить в следующей редакции: «[<span style={{ color: 'blue' }}>текст</span>]»
+        Статью [<span style={{ color: '#ccc' }}>№</span>] Часть [<span style={{ color: '#ccc' }}>№</span>] Пункт [<span style={{ color: '#ccc' }}>№</span>] Подпункт [<span style={{ color: '#ccc' }}>№</span>] изложить в следующей редакции: «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: ['ZakonRFoPravkah', 'FKZ', 'FZ'],
@@ -745,7 +745,7 @@ export default {
   tb64: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Признать утратившим силу Федеральный закон от [<span style={{ color: 'blue' }}>дата</span>] года [<span style={{ color: 'blue' }}>номер</span>]-ФЗ [<span style={{ color: 'blue' }}>название закона (ссылка на официальный источник опубликования)</span>]
+        Признать утратившим силу Федеральный закон от [<span style={{ color: '#ccc' }}>дата</span>] года [<span style={{ color: '#ccc' }}>номер</span>]-ФЗ [<span style={{ color: '#ccc' }}>название закона (ссылка на официальный источник опубликования)</span>]
       </span>
     ),
     keys: ['FZ'],
@@ -755,7 +755,7 @@ export default {
   tb65: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Признать утратившим силу [<span style={{ color: 'blue' }}>ссылка на норму</span>] Федерального закона от [<span style={{ color: 'blue' }}>дата</span>] года [<span style={{ color: 'blue' }}>номер</span>]-ФЗ [<span style={{ color: 'blue' }}>название закона (ссылка на официальный источник опубликования)</span>]
+        Признать утратившим силу [<span style={{ color: '#ccc' }}>ссылка на норму</span>] Федерального закона от [<span style={{ color: '#ccc' }}>дата</span>] года [<span style={{ color: '#ccc' }}>номер</span>]-ФЗ [<span style={{ color: '#ccc' }}>название закона (ссылка на официальный источник опубликования)</span>]
       </span>
     ),
     keys: ['FZ'],
@@ -765,7 +765,7 @@ export default {
   tb66: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>НАИМЕНОВАНИЕ ОРГАНА ПРИНЯТИЯ ДОКУМЕНТА</span>]
+        [<span style={{ color: '#ccc' }}>НАИМЕНОВАНИЕ ОРГАНА ПРИНЯТИЯ ДОКУМЕНТА</span>]
       </span>
     ),
     keys: ['PrikazFoiv'],
@@ -775,7 +775,7 @@ export default {
   tb67: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящее постановление вступает в силу со дня вступления в силу с [<span style={{ color: 'blue' }}>дата</span>]
+        Настоящее постановление вступает в силу со дня вступления в силу с [<span style={{ color: '#ccc' }}>дата</span>]
       </span>
     ),
     keys: ['PrikazFoiv'],
@@ -785,7 +785,7 @@ export default {
   tb68: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий приказ вступает в силу по истечении [<span style={{ color: 'blue' }}>срок</span>] с дня его официального опубликования
+        Настоящий приказ вступает в силу по истечении [<span style={{ color: '#ccc' }}>срок</span>] с дня его официального опубликования
       </span>
     ),
     keys: ['PrikazFoiv'],
@@ -795,7 +795,7 @@ export default {
   tb69: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>название должности руководителя органа принятия документа</span>]
+        [<span style={{ color: '#ccc' }}>название должности руководителя органа принятия документа</span>]
       </span>
     ),
     keys: ['PrikazFoiv'],
@@ -805,7 +805,7 @@ export default {
   tb70: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>ФИО руководителя органа принятия документа</span>]
+        [<span style={{ color: '#ccc' }}>ФИО руководителя органа принятия документа</span>]
       </span>
     ),
     keys: ['PrikazFoiv'],
@@ -815,7 +815,7 @@ export default {
   tb71: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящее распоряжение вступает в силу с [<span style={{ color: 'blue' }}>дата</span>] г.
+        Настоящее распоряжение вступает в силу с [<span style={{ color: '#ccc' }}>дата</span>] г.
       </span>
     ),
     keys: ['RasporyazheniePresidenta', 'RasporyazheniePravitelstva'],
@@ -825,7 +825,7 @@ export default {
   tb72: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящее распоряжение распространяется на правоотношения, возникшие с [<span style={{ color: 'blue' }}>дата</span>] г.
+        Настоящее распоряжение распространяется на правоотношения, возникшие с [<span style={{ color: '#ccc' }}>дата</span>] г.
       </span>
     ),
     keys: ['RasporyazheniePravitelstva'],
@@ -835,7 +835,7 @@ export default {
   tb73: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящее распоряжение вступает в силу со дня вступления в силу [<span style={{ color: 'blue' }}>название, дата, номер НПА и/или ссылка на конкретную норму</span>]
+        Настоящее распоряжение вступает в силу со дня вступления в силу [<span style={{ color: '#ccc' }}>название, дата, номер НПА и/или ссылка на конкретную норму</span>]
       </span>
     ),
     keys: ['RasporyazheniePravitelstva'],
@@ -845,7 +845,7 @@ export default {
   tb74: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящее распоряжение вступает в силу с [<span style={{ color: 'blue' }}>дата</span>] г., за исключением (<span style={{ color: 'blue' }}>ссылка на конкретную норму</span>), вступающих(…) в силу со дня официального опубликования настоящего распоряжения.
+        Настоящее распоряжение вступает в силу с [<span style={{ color: '#ccc' }}>дата</span>] г., за исключением (<span style={{ color: '#ccc' }}>ссылка на конкретную норму</span>), вступающих(…) в силу со дня официального опубликования настоящего распоряжения.
       </span>
     ),
     keys: ['RasporyazheniePravitelstva'],
@@ -855,7 +855,7 @@ export default {
   tb75: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящее распоряжение вступает в силу со дня официального опубликования, за исключением (<span style={{ color: 'blue' }}>ссылка на конкретную норму</span>), которые(…) вступают в силу с [<span style={{ color: 'blue' }}>дата</span>] г.
+        Настоящее распоряжение вступает в силу со дня официального опубликования, за исключением (<span style={{ color: '#ccc' }}>ссылка на конкретную норму</span>), которые(…) вступают в силу с [<span style={{ color: '#ccc' }}>дата</span>] г.
       </span>
     ),
     keys: ['RasporyazheniePravitelstva'],
@@ -865,7 +865,7 @@ export default {
   tb76: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящее распоряжение вступает в силу со дня официального опубликования, за исключением (<span style={{ color: 'blue' }}>ссылка на конкретную норму</span>), вступающие(…) в силу  с [<span style={{ color: 'blue' }}>дата</span>] г.
+        Настоящее распоряжение вступает в силу со дня официального опубликования, за исключением (<span style={{ color: '#ccc' }}>ссылка на конкретную норму</span>), вступающие(…) в силу  с [<span style={{ color: '#ccc' }}>дата</span>] г.
       </span>
     ),
     keys: ['RasporyazheniePravitelstva'],
@@ -875,7 +875,7 @@ export default {
   tb77: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Признать утратившим силу Федеральный конституционный закон от [<span style={{ color: 'blue' }}>дата</span>] года [<span style={{ color: 'blue' }}>номер</span>]-ФКЗ [<span style={{ color: 'blue' }}>название закона (ссылка на официальный источник опубликования)</span>]
+        Признать утратившим силу Федеральный конституционный закон от [<span style={{ color: '#ccc' }}>дата</span>] года [<span style={{ color: '#ccc' }}>номер</span>]-ФКЗ [<span style={{ color: '#ccc' }}>название закона (ссылка на официальный источник опубликования)</span>]
       </span>
     ),
     keys: ['FKZ'],
@@ -885,7 +885,7 @@ export default {
   tb78: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Признать утратившим силу [<span style={{ color: 'blue' }}>ссылка на норму</span>] Федерального конституционного закона от [<span style={{ color: 'blue' }}>дата</span>] года [<span style={{ color: 'blue' }}>номер</span>]-ФКЗ [<span style={{ color: 'blue' }}>название закона (ссылка на официальный источник опубликования)</span>]
+        Признать утратившим силу [<span style={{ color: '#ccc' }}>ссылка на норму</span>] Федерального конституционного закона от [<span style={{ color: '#ccc' }}>дата</span>] года [<span style={{ color: '#ccc' }}>номер</span>]-ФКЗ [<span style={{ color: '#ccc' }}>название закона (ссылка на официальный источник опубликования)</span>]
       </span>
     ),
     keys: ['FKZ'],
@@ -895,7 +895,7 @@ export default {
   tb79: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Признать утратившим силу [<span style={{ color: 'blue' }}>ссылка на норму</span>] Конституцию Российской Федерации, принятую всенародным голосованием 12 декабря 1993 года (Российская газета, 1993, 25 декабря)
+        Признать утратившим силу [<span style={{ color: '#ccc' }}>ссылка на норму</span>] Конституцию Российской Федерации, принятую всенародным голосованием 12 декабря 1993 года (Российская газета, 1993, 25 декабря)
       </span>
     ),
     keys: ['ZakonRFoPravkah'],
@@ -905,7 +905,7 @@ export default {
   tb80: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Федеральный конституционный закон вступает в силу по истечении [<span style={{ color: 'blue' }}>срок</span>] после дня его официального опубликования
+        Настоящий Федеральный конституционный закон вступает в силу по истечении [<span style={{ color: '#ccc' }}>срок</span>] после дня его официального опубликования
       </span>
     ),
     keys: ['FKZ'],
@@ -915,7 +915,7 @@ export default {
   tb81: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Федеральный конституционный закон вступает в силу по истечении [<span style={{ color: 'blue' }}>срок</span>] после дня его официального опубликования, за исключением [<span style={{ color: 'blue' }}>ссылка на норму</span>] настоящего Федерального конституционного закона
+        Настоящий Федеральный конституционный закон вступает в силу по истечении [<span style={{ color: '#ccc' }}>срок</span>] после дня его официального опубликования, за исключением [<span style={{ color: '#ccc' }}>ссылка на норму</span>] настоящего Федерального конституционного закона
       </span>
     ),
     keys: ['FKZ'],
@@ -925,7 +925,7 @@ export default {
   tb82: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Федеральный конституционный закон вступает в силу с [<span style={{ color: 'blue' }}>дата</span>]
+        Настоящий Федеральный конституционный закон вступает в силу с [<span style={{ color: '#ccc' }}>дата</span>]
       </span>
     ),
     keys: ['FKZ'],
@@ -935,7 +935,7 @@ export default {
   tb83: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Федеральный конституционный закон вступает в силу с [<span style={{ color: 'blue' }}>дата</span>], за исключением [<span style={{ color: 'blue' }}>ссылка на норму</span>] настоящего Федерального конституционного закона
+        Настоящий Федеральный конституционный закон вступает в силу с [<span style={{ color: '#ccc' }}>дата</span>], за исключением [<span style={{ color: '#ccc' }}>ссылка на норму</span>] настоящего Федерального конституционного закона
       </span>
     ),
     keys: ['FKZ'],
@@ -945,7 +945,7 @@ export default {
   tb84: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Федеральный конституционный закон вступает в силу <span style={{ color: 'blue' }}>со дня его официального опубликования</span>
+        Настоящий Федеральный конституционный закон вступает в силу <span style={{ color: '#ccc' }}>со дня его официального опубликования</span>
       </span>
     ),
     keys: ['FKZ'],
@@ -955,7 +955,7 @@ export default {
   tb85: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Федеральный конституционный закон вступает в силу <span style={{ color: 'blue' }}>со дня его официального опубликования</span>, за исключением [<span style={{ color: 'blue' }}>ссылка на норму</span>] настоящего Федерального конституционного закона
+        Настоящий Федеральный конституционный закон вступает в силу <span style={{ color: '#ccc' }}>со дня его официального опубликования</span>, за исключением [<span style={{ color: '#ccc' }}>ссылка на норму</span>] настоящего Федерального конституционного закона
       </span>
     ),
     keys: ['FKZ'],
@@ -965,7 +965,7 @@ export default {
   tb86: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>ссылка на норму</span>] настоящего Федерального конституционный закона вступает в силу по истечении [<span style={{ color: 'blue' }}>срок</span>] после дня его официального опубликования
+        [<span style={{ color: '#ccc' }}>ссылка на норму</span>] настоящего Федерального конституционный закона вступает в силу по истечении [<span style={{ color: '#ccc' }}>срок</span>] после дня его официального опубликования
       </span>
     ),
     keys: ['FKZ'],
@@ -975,7 +975,7 @@ export default {
   tb87: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>ссылка на норму</span>] настоящего Федерального конституционного закона вступает в силу с [<span style={{ color: 'blue' }}>дата</span>]
+        [<span style={{ color: '#ccc' }}>ссылка на норму</span>] настоящего Федерального конституционного закона вступает в силу с [<span style={{ color: '#ccc' }}>дата</span>]
       </span>
     ),
     keys: ['FKZ'],
@@ -985,7 +985,7 @@ export default {
   tb88: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>ссылка на норму</span>] настоящего Федерального конституционного закона вступает в силу со дня его официального опубликования
+        [<span style={{ color: '#ccc' }}>ссылка на норму</span>] настоящего Федерального конституционного закона вступает в силу со дня его официального опубликования
       </span>
     ),
     keys: ['FKZ'],
@@ -995,7 +995,7 @@ export default {
   tb89: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Федеральный закон вступает в силу по истечении [<span style={{ color: 'blue' }}>срок</span>] после дня его официального опубликования
+        Настоящий Федеральный закон вступает в силу по истечении [<span style={{ color: '#ccc' }}>срок</span>] после дня его официального опубликования
       </span>
     ),
     keys: ['FZ'],
@@ -1005,7 +1005,7 @@ export default {
   tb90: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Федеральный закон вступает в силу по истечении [<span style={{ color: 'blue' }}>срок</span>] после дня его официального опубликования, за исключением [<span style={{ color: 'blue' }}>ссылка на норму</span>] настоящего Федерального закона
+        Настоящий Федеральный закон вступает в силу по истечении [<span style={{ color: '#ccc' }}>срок</span>] после дня его официального опубликования, за исключением [<span style={{ color: '#ccc' }}>ссылка на норму</span>] настоящего Федерального закона
       </span>
     ),
     keys: ['FZ'],
@@ -1015,7 +1015,7 @@ export default {
   tb91: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Федеральный закон вступает в силу с [<span style={{ color: 'blue' }}>дата</span>]
+        Настоящий Федеральный закон вступает в силу с [<span style={{ color: '#ccc' }}>дата</span>]
       </span>
     ),
     keys: ['FZ'],
@@ -1025,7 +1025,7 @@ export default {
   tb92: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Федеральный закон вступает в силу с [<span style={{ color: 'blue' }}>дата</span>], за исключением [<span style={{ color: 'blue' }}>ссылка на норму</span>] настоящего Федерального закона
+        Настоящий Федеральный закон вступает в силу с [<span style={{ color: '#ccc' }}>дата</span>], за исключением [<span style={{ color: '#ccc' }}>ссылка на норму</span>] настоящего Федерального закона
       </span>
     ),
     keys: ['FZ'],
@@ -1035,7 +1035,7 @@ export default {
   tb93: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Федеральный закон вступает в силу <span style={{ color: 'blue' }}>со дня его официального опубликования</span>
+        Настоящий Федеральный закон вступает в силу <span style={{ color: '#ccc' }}>со дня его официального опубликования</span>
       </span>
     ),
     keys: ['FZ'],
@@ -1045,7 +1045,7 @@ export default {
   tb94: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящий Федеральный закон вступает в силу <span style={{ color: 'blue' }}>со дня его официального опубликования</span>, за исключением [<span style={{ color: 'blue' }}>ссылка на норму</span>] настоящего Федерального закона
+        Настоящий Федеральный закон вступает в силу <span style={{ color: '#ccc' }}>со дня его официального опубликования</span>, за исключением [<span style={{ color: '#ccc' }}>ссылка на норму</span>] настоящего Федерального закона
       </span>
     ),
     keys: ['FZ'],
@@ -1055,7 +1055,7 @@ export default {
   tb95: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>ссылка на норму</span>] настоящего Федерального закона вступает в силу по истечении [<span style={{ color: 'blue' }}>срок</span>] после дня его официального опубликования
+        [<span style={{ color: '#ccc' }}>ссылка на норму</span>] настоящего Федерального закона вступает в силу по истечении [<span style={{ color: '#ccc' }}>срок</span>] после дня его официального опубликования
       </span>
     ),
     keys: ['FZ'],
@@ -1065,7 +1065,7 @@ export default {
   tb96: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>ссылка на норму</span>] настоящего Федерального закона вступает в силу с [<span style={{ color: 'blue' }}>дата</span>]
+        [<span style={{ color: '#ccc' }}>ссылка на норму</span>] настоящего Федерального закона вступает в силу с [<span style={{ color: '#ccc' }}>дата</span>]
       </span>
     ),
     keys: ['FZ'],
@@ -1075,7 +1075,7 @@ export default {
   tb97: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>ссылка на норму</span>] настоящего Федерального закона вступает в силу со дня его официального опубликования
+        [<span style={{ color: '#ccc' }}>ссылка на норму</span>] настоящего Федерального закона вступает в силу со дня его официального опубликования
       </span>
     ),
     keys: ['FZ'],
@@ -1095,7 +1095,7 @@ export default {
   // tb99: {
   //   node: (
   //     <span style={{ fontFamily: 'Times New Roman' }}>
-  //       Дополнить пунктом [<span style={{ color: 'blue' }}>№</span>] следующего содержания:
+  //       Дополнить пунктом [<span style={{ color: '#ccc' }}>№</span>] следующего содержания:
   //     </span>
   //   ),
   //   keys: ['Pravitelstvo'],
@@ -1105,7 +1105,7 @@ export default {
   tb100: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Утвердить прилагаемые изменения которые вносятся в [<span style={{ color: 'blue' }}>название, дата, номер НПА</span>]
+        Утвердить прилагаемые изменения которые вносятся в [<span style={{ color: '#ccc' }}>название, дата, номер НПА</span>]
       </span>
     ),
     keys: [
@@ -1118,7 +1118,7 @@ export default {
   tb101: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        В пункте [<span style={{ color: 'blue' }}>№</span>] слова «[<span style={{ color: 'blue' }}>текст</span>]» заменить словами «[<span style={{ color: 'blue' }}>текст</span>]»
+        В пункте [<span style={{ color: '#ccc' }}>№</span>] слова «[<span style={{ color: '#ccc' }}>текст</span>]» заменить словами «[<span style={{ color: '#ccc' }}>текст</span>]»
       </span>
     ),
     keys: [
@@ -1131,7 +1131,7 @@ export default {
   tb102: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Дополнить пунктом [<span style={{ color: 'blue' }}>№</span>] следующего содержания:
+        Дополнить пунктом [<span style={{ color: '#ccc' }}>№</span>] следующего содержания:
       </span>
     ),
     keys: [
@@ -1144,7 +1144,7 @@ export default {
   tb103: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        [<span style={{ color: 'blue' }}>Свободный текст</span>]
+        [<span style={{ color: '#ccc' }}>Свободный текст</span>]
       </span>
     ),
     keys: ['Pravitelstvo'],
@@ -1166,7 +1166,7 @@ export default {
   tb105: {
     node: (
       <span style={{ fontFamily: 'Times New Roman' }}>
-        Настоящее постановление вступает в силу со дня его официального опубликования, за исключением [<span style={{ color: 'blue' }}>пункта(ов)</span>]
+        Настоящее постановление вступает в силу со дня его официального опубликования, за исключением [<span style={{ color: '#ccc' }}>пункта(ов)</span>]
       </span>
     ),
     keys: [

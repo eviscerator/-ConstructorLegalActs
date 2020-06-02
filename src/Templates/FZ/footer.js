@@ -13,10 +13,10 @@ export default () => {
         Москва, Кремль
       </p>
       <p style={{ textAlign: 'start', fontFamily: 'Times New Roman', marginTop: 10, fontSize: 19 }}>
-        [<span style={{ color: 'blue' }}>дата</span>]
+        [<span style={{ color: '#ccc' }}>дата</span>]
       </p>
       <p style={{ textAlign: 'start', fontFamily: 'Times New Roman', marginTop: 10, fontSize: 19 }}>
-        № [<span style={{ color: 'blue' }}>номер</span>]-ФКЗ
+        № [<span style={{ color: '#ccc' }}>номер</span>]-ФКЗ
       </p>
     </div>
   )

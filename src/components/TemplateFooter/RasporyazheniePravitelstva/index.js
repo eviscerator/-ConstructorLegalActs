@@ -14,14 +14,14 @@ export default () => {
           Российской Федерации
         </p>
         <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', marginBottom: 30, marginTop: 10, fontSize: 19 }}>
-          от [<span style={{ color: 'blue' }}>дата</span>] N [<span style={{ color: 'blue' }}>дата</span>]
+          от [<span style={{ color: '#ccc' }}>дата</span>] N [<span style={{ color: '#ccc' }}>дата</span>]
         </p>
       </div>
       <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', marginTop: 10, fontSize: 19 }}>
         ИЗМЕНЕНИЯ
       </p>
       <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', marginBottom: 40, marginTop: 10, fontSize: 19 }}>
-        которые вносятся в [<span style={{ color: 'blue' }}>название, дата, номер НПА</span>]
+        которые вносятся в [<span style={{ color: '#ccc' }}>название, дата, номер НПА</span>]
       </p>
     </div>
   )

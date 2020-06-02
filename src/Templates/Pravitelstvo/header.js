@@ -17,7 +17,7 @@ export default () => (
       ПОСТАНОВЛЕНИЕ
     </h3>
     <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', fontSize: 19 }}>
-      <span style={{ color: 'blue', position: 'relative', cursor: 'pointer' }}><DatePicker format='DD.MM.YYYY' style={{ width: 100, cursor: 'pointer' }} placeholder='Дата' size='small' /></span> № <span style={{ color: 'blue' }}><Input placeholder='Номер' size='small' style={{ width: 150 }} /></span>
+      <span style={{ color: '#ccc', position: 'relative', cursor: 'pointer' }}><DatePicker format='DD.MM.YYYY' style={{ width: 100, cursor: 'pointer' }} placeholder='Дата' size='small' /></span> № <span style={{ color: '#ccc' }}><Input placeholder='Номер' size='small' style={{ width: 150 }} /></span>
     </p>
     <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', fontSize: 19 }}>
       Москва

@@ -11,7 +11,7 @@ export default () => {
           к Указу Президента Российской Федерации
         </p>
         <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', marginBottom: 30, marginTop: 10, fontSize: 19 }}>
-          от [<span style={{ color: 'blue' }}>дата</span>] N [<span style={{ color: 'blue' }}>дата</span>]
+          от [<span style={{ color: '#ccc' }}>дата</span>] N [<span style={{ color: '#ccc' }}>дата</span>]
         </p>
       </div>
       <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', marginTop: 10, fontSize: 19 }}>

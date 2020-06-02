@@ -9,13 +9,13 @@ export default () => (
       РАСПОРЯЖЕНИЕ
     </h3>
     <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', fontSize: 19 }}>
-      [<span style={{ color: 'blue' }}>дата</span>] № [<span style={{ color: 'blue' }}>номер</span>]
+      [<span style={{ color: '#ccc' }}>дата</span>] № [<span style={{ color: '#ccc' }}>номер</span>]
     </p>
     <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', fontSize: 19 }}>
       Москва
     </p>
     <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', marginBottom: 40, fontSize: 19 }}>
-      [<span style={{ color: 'blue' }}>название</span>]
+      [<span style={{ color: '#ccc' }}>название</span>]
     </p>
   </>
 )

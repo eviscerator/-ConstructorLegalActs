@@ -13,7 +13,7 @@ export default () => (
         Российской Федерации
       </p>
       <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', marginBottom: 30, marginTop: 10, fontSize: 19 }}>
-        от [<span style={{ color: 'blue' }}>дата</span>] N [<span style={{ color: 'blue' }}>дата</span>]
+        от [<span style={{ color: '#ccc' }}>дата</span>] N [<span style={{ color: '#ccc' }}>дата</span>]
       </p>
     </div>
     <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', marginTop: 10, fontSize: 19 }}>
@@ -23,7 +23,7 @@ export default () => (
       которые вносятся в постановление Правительства
     </p>
     <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', marginBottom: 40, marginTop: 10, fontSize: 19 }}>
-      Российской Федерации от [<span style={{ color: 'blue' }}>дата</span>] [<span style={{ color: 'blue' }}>номер</span>]
+      Российской Федерации от [<span style={{ color: '#ccc' }}>дата</span>] [<span style={{ color: '#ccc' }}>номер</span>]
     </p>
   </div>
 )

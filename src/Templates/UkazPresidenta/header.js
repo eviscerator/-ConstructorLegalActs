@@ -9,7 +9,7 @@ export default () => (
       ПРЕЗИДЕНТ РОССИЙСКОЙ ФЕДЕРАЦИИ
     </h3>
     <p style={{ textAlign: 'center', fontFamily: 'Times New Roman', marginBottom: 40, fontSize: 19 }}>
-      [<span style={{ color: 'blue' }}>название</span>]
+      [<span style={{ color: '#ccc' }}>название</span>]
     </p>
   </>
 )
